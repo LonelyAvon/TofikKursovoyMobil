@@ -1,0 +1,64 @@
+﻿<Properties StartupConfiguration="{475E4853-3F04-457B-AA94-D6FA182A323A}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="TofikKursovoyMobil/Pages/AllProducts.xaml">
+    <Files>
+      <File FileName="TofikKursovoyMobil/Pages/AllProducts.xaml.cs" Line="2" Column="14" />
+      <File FileName="TofikKursovoyMobil/Pages/AllProducts.xaml" Line="4" Column="6" />
+      <File FileName="TofikKursovoyMobil/Pages/Cart.xaml" />
+      <File FileName="TofikKursovoyMobil/Pages/CartPage.xaml" />
+      <File FileName="TofikKursovoyMobil/Pages/ProductInfo.xaml" />
+      <File FileName="TofikKursovoyMobil/Pages/ProfilePage.xaml" />
+      <File FileName="TofikKursovoyMobil/Pages/SearchPage.xaml" />
+      <File FileName="TofikKursovoyMobil/App.xaml.cs" />
+      <File FileName="TofikKursovoyMobil/App.xaml" />
+      <File FileName="TofikKursovoyMobil/AppShell.xaml" />
+      <File FileName="TofikKursovoyMobil/MainPage.xaml" />
+      <File FileName="TofikKursovoyMobil/MauiProgram.cs" />
+      <File FileName="TofikKursovoyMobil/Platforms/iOS/Program.cs" />
+      <File FileName="TofikKursovoyMobil/Pages/ProductInfo.xaml.cs" />
+      <File FileName="TofikKursovoyMobil/Pages/Cart.xaml.cs" Line="37" Column="37" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TofikKursovoyMobil" expanded="True">
+            <Node name="TofikKursovoyMobil" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="AllProducts.xaml" expanded="True" selected="True" />
+                <Node name="Cart.xaml" expanded="True" />
+                <Node name="CartPage.xaml" expanded="True" />
+                <Node name="ProductInfo.xaml" expanded="True" />
+                <Node name="ProfilePage.xaml" expanded="True" />
+                <Node name="SearchPage.xaml" expanded="True" />
+              </Node>
+              <Node name="Platforms" expanded="True">
+                <Node name="iOS" expanded="True" />
+              </Node>
+              <Node name="Resources" expanded="True">
+                <Node name="Images" expanded="True">
+                  <Node name="Guitars" expanded="True" />
+                  <Node name="Key" expanded="True" />
+                  <Node name="Photos" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="App.xaml" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True" />
+            </Node>
+            <Node name="TofikKursovoyModels" expanded="True">
+              <Node name="ClassesCombine" expanded="True" />
+              <Node name="Context" expanded="True" />
+              <Node name="Models" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.TofikKursovoyMobil PreferredExecutionTarget="MyAppleMacCatalystID" Xamarin.HotReload.DebuggerTimeoutException.TofikKursovoyMobil.HideInfoBar="True" />
+</Properties>

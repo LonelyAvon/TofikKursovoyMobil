@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TofikKursovoyMobil.Pages.AllProducts"
+             Title="AllProducts">
+    <Grid ColumnDefinitions="30,1*,30" RowDefinitions="50,200*">
+        <Border Grid.ColumnSpan="3" Grid.Row="0" BackgroundColor="Black" Stroke="Black"/>
+       <FlexLayout Grid.Row="0" Grid.Column="1" JustifyContent="SpaceBetween" HorizontalOptions="Center" >
+           <ImageButton x:Name="Back" Clicked="Back_Clicked" Source="backarrow.png" MaximumHeightRequest="30" MaximumWidthRequest="30"/>
+           <Image Source="logo.png" MaximumHeightRequest="50"/>
+           <Label Margin="0,0,24,0"/>
+       </FlexLayout>
+        <ScrollView Grid.Row="1" Grid.Column="1" >
+            <FlexLayout
+                x:Name="flexLayout"
+                        Direction="Row"
+                        Wrap="Wrap"
+                        AlignContent="Start" AlignItems="Start"
+                        BindableLayout.ItemsSource="{Binding _product}"
+                        JustifyContent="SpaceAround" >
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate>
+                            <StackLayout Orientation="Vertical" WidthRequest="180">
+                                <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer x:Name="GetProduct" Tapped="GetProduct_Tapped"/>
+                            </StackLayout.GestureRecognizers>
+                            <Image Source="{Binding PhotoName}" HeightRequest="150" WidthRequest="150"/>
+                            <Label Text="{Binding Name}" HorizontalTextAlignment="Center" FontSize="13"/>
+                            <Label Text="{Binding ShortDescription}" HeightRequest="40" LineBreakMode="WordWrap" FontAttributes="Italic" FontFamily="" HorizontalTextAlignment="Center" FontSize="13"/>
+                            <Label HorizontalOptions="Center">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span x:Name="DiscountSaleLabel"  Text="{Binding  NewCost}" TextColor="#4DC939"/>
+                                        <Span Text=" руб." TextColor="#4DC939"/>
+                                    </FormattedString>
+
+                                </Label.FormattedText>
+                            </Label>
+                            <Border x:Name="BuyProduct" Padding="20,0,20,0" BackgroundColor="#735777" VerticalOptions="Center" HorizontalOptions="Center" Margin="10,0,0,20">
+                                <Label Text="Купить" TextColor="White"/>
+                                </Border>
+                        </StackLayout>
+
+                    </DataTemplate>
+
+                </BindableLayout.ItemTemplate>
+                </FlexLayout>
+
+        </ScrollView>
+    </Grid>
+</ContentPage>

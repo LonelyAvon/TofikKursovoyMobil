@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <BundleResource Include="Resources/Images/logo.png" />
+    <BundleResource Include="Resources/Images/Photos/Advertising.png" />
+    <BundleResource Include="Resources/Images/Photos/Guitar.png" />
+    <BundleResource Include="Resources/Images/Photos/Piano.png" />
+    <BundleResource Include="Resources/Images/logo.png" />
+    <BundleResource Include="Resources/Images/Photos/Puf.png" />
+    <BundleResource Include="Resources/Images/Guitars/ibanezgg320.png" />
+    <BundleResource Include="Resources/Images/Guitars/ibanezyc320.png" />
+    <BundleResource Include="Resources/Images/Guitars/yamahajj213.png" />
+    <BundleResource Include="Resources/Images/Guitars/yamahaki320.png" />
+    <BundleResource Include="Resources/Images/Photos/hall.png" />
+    <BundleResource Include="Resources/Images/Photos/telegram.png" />
+    <BundleResource Include="Resources/Images/Photos/vk.png" />
+    <BundleResource Include="Resources/Images/Beat/melodicatd02k.png" />
+    <BundleResource Include="Resources/Images/Beat/melodicatempest.png" />
+    <BundleResource Include="Resources/Images/Fuu/roybensonmaesta.png" />
+    <BundleResource Include="Resources/Images/Fuu/roybensonpf500.png" />
+    <BundleResource Include="Resources/Images/Key/rolandgl10.png" />
+    <BundleResource Include="Resources/Images/Key/korgpa700.png" />
+    <BundleResource Include="Resources/Images/Key/korgpa600.png" />
+    <BundleResource Include="Resources/Images/Key/rolandjunods61.png" />
+    <BundleResource Include="Resources/Images/Key/yamahapsre373.png" />
+    <BundleResource Include="/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyMobil/obj/Release/net7.0-maccatalyst/resizetizer/r/account.png" />
+    <BundleResource Include="/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyMobil/obj/Release/net7.0-maccatalyst/resizetizer/r/account@2x.png" />
+    <BundleResource Include="/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyMobil/obj/Release/net7.0-maccatalyst/resizetizer/r/account@3x.png" />
+    <BundleResource Include="/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyMobil/obj/Release/net7.0-maccatalyst/resizetizer/r/backarrow.png" />
+    <BundleResource Include="/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyMobil/obj/Release/net7.0-maccatalyst/resizetizer/r/backarrow@2x.png" />
+    <BundleResource Include="/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyMobil/obj/Release/net7.0-maccatalyst/resizetizer/r/backarrow@3x.png" />
+    <BundleResource Include="/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyMobil/obj/Release/net7.0-maccatalyst/resizetizer/r/cart.png" />
+    <BundleResource Include="/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyMobil/obj/Release/net7.0-maccatalyst/resizetizer/r/cart@2x.png" />
+    <BundleResource Include="/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyMobil/obj/Release/net7.0-maccatalyst/resizetizer/r/cart@3x.png" />
+    <BundleResource Include="/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyMobil/obj/Release/net7.0-maccatalyst/resizetizer/r/dotnet_bot.png" />
+    <BundleResource Include="/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyMobil/obj/Release/net7.0-maccatalyst/resizetizer/r/dotnet_bot@2x.png" />
+    <BundleResource Include="/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyMobil/obj/Release/net7.0-maccatalyst/resizetizer/r/dotnet_bot@3x.png" />
+    <BundleResource Include="/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyMobil/obj/Release/net7.0-maccatalyst/resizetizer/r/home.png" />
+    <BundleResource Include="/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyMobil/obj/Release/net7.0-maccatalyst/resizetizer/r/home@2x.png" />
+    <BundleResource Include="/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyMobil/obj/Release/net7.0-maccatalyst/resizetizer/r/home@3x.png" />
+    <BundleResource Include="/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyMobil/obj/Release/net7.0-maccatalyst/resizetizer/r/Resources/logo.png" />
+    <BundleResource Include="/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyMobil/obj/Release/net7.0-maccatalyst/resizetizer/r/search.png" />
+    <BundleResource Include="/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyMobil/obj/Release/net7.0-maccatalyst/resizetizer/r/search@2x.png" />
+    <BundleResource Include="/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyMobil/obj/Release/net7.0-maccatalyst/resizetizer/r/search@3x.png" />
+    <BundleResource Include="obj/Release/net7.0-maccatalyst/resizetizer/f/OpenSans-Regular.ttf" />
+    <BundleResource Include="obj/Release/net7.0-maccatalyst/resizetizer/f/OpenSans-Semibold.ttf" />
+  </ItemGroup>
+</Project>

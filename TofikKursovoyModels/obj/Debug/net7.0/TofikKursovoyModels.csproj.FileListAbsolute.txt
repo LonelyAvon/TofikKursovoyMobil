@@ -1,0 +1,14 @@
+/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyModels/bin/Debug/net7.0/TofikKursovoyModels.deps.json
+/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyModels/bin/Debug/net7.0/TofikKursovoyModels.runtimeconfig.json
+/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyModels/bin/Debug/net7.0/TofikKursovoyModels.dll
+/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyModels/bin/Debug/net7.0/TofikKursovoyModels.pdb
+/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyModels/obj/Debug/net7.0/TofikKursovoyModels.GeneratedMSBuildEditorConfig.editorconfig
+/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyModels/obj/Debug/net7.0/TofikKursovoyModels.AssemblyInfoInputs.cache
+/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyModels/obj/Debug/net7.0/TofikKursovoyModels.AssemblyInfo.cs
+/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyModels/obj/Debug/net7.0/TofikKursovoyModels.csproj.CoreCompileInputs.cache
+/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyModels/obj/Debug/net7.0/TofikKursovoyModels.dll
+/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyModels/obj/Debug/net7.0/refint/TofikKursovoyModels.dll
+/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyModels/obj/Debug/net7.0/TofikKursovoyModels.pdb
+/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyModels/obj/Debug/net7.0/TofikKursovoyModels.genruntimeconfig.cache
+/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyModels/obj/Debug/net7.0/ref/TofikKursovoyModels.dll
+/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyModels/obj/Debug/net7.0/TofikKursovoyModels.csproj.AssemblyReference.cache

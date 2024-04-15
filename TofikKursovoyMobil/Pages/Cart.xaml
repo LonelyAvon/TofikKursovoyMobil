@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TofikKursovoyMobil.Pages.Cart"
+             Title="Cart">
+     <Grid RowDefinitions="30*,20*,300*,20*,20*,30*"  ColumnDefinitions="30,1*,30" >
+        <Border Grid.ColumnSpan="3" Grid.Row="0" BackgroundColor="Black" Stroke="Black"/>
+       <FlexLayout Grid.Row="0" Grid.Column="1" JustifyContent="SpaceBetween" HorizontalOptions="Center" >
+           <ImageButton x:Name="Back" Clicked="Back_Clicked" Source="backarrow.png" MaximumHeightRequest="30" MaximumWidthRequest="30"/>
+           <Image Source="logo.png" MaximumHeightRequest="50"/>
+           <Label Margin="0,0,24,0"/>
+       </FlexLayout>
+         <Label Margin="0,5,0,0" x:Name="Products" Text="Товары:" IsVisible="Hidden" FontSize="24" Grid.Row="1" Grid.Column="1" TextColor="Black"/>
+        <CollectionView x:Name="ItemsStackLayout" SelectionMode="Single"  SelectionChanged="ItemsStackLayout_SelectionChanged" Grid.Row="2" Grid.Column="1" IsVisible="Hidden">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+            <Grid Padding="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="Auto" />
+                     <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5*" />
+                    <ColumnDefinition Width="10*" />
+                    <ColumnDefinition Width="10"/>
+                </Grid.ColumnDefinitions>
+                <Border Grid.RowSpan="3" Grid.ColumnSpan="3" Stroke="Black"/>
+                <Image Grid.Row="0" Grid.RowSpan="3" Grid.Column="0"
+                       Source="Images/Buttons/box.png"
+                       HeightRequest="60"
+                       WidthRequest="60"
+                       />
+                <Label Grid.Row="0"
+                       Grid.Column="1"
+                       Text="{Binding Name}"
+                       VerticalOptions="CenterAndExpand"
+                       />
+                <Label Grid.Column="1"
+                       Grid.Row="1"
+                       Text="{Binding ShortDescription}"
+                       FontAttributes="Bold"
+                       VerticalOptions="CenterAndExpand"/>
+                <Label Grid.Row="2"
+                       Grid.Column="1"
+                       FontAttributes="Bold"
+                       FontFamily=""
+                       VerticalOptions="CenterAndExpand" >
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="{Binding OldCost}" TextColor="#735777" FontAttributes="Bold" FontSize="16" FontFamily=""/>
+                            <Span Text=" руб." TextColor="Black"/>
+                        </FormattedString>
+
+                    </Label.FormattedText>
+                    </Label>
+            </Grid>
+        </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <VerticalStackLayout x:Name="ProductStackLayout" Grid.Row="2" Grid.Column="1" VerticalOptions="Center"  Spacing="20">
+
+            <Image Source="cart.png" VerticalOptions="Center" HeightRequest="100"/>
+            <Label Text="В Корзине пока нет товаров" HorizontalOptions="Center" FontSize="30" HorizontalTextAlignment="Center"/>
+            <Label Text="Добавляйте понравившиеся товары и наслаждайтесь покупками" HorizontalOptions="Center" FontSize="20" HorizontalTextAlignment="Center"/>
+        </VerticalStackLayout>
+         <Button Grid.Row="3" x:Name="ClearAllCart" Clicked="ClearAllCart_Clicked" Text="Очистить корзину" Padding="30" FontSize="20" Grid.Column="1"  HorizontalOptions="CenterAndExpand" IsVisible="Hidden"/>
+        <Border Grid.Row="5" Grid.ColumnSpan="3" MaximumHeightRequest="2" Stroke="Black" VerticalOptions="Start"/>
+
+            <FlexLayout  Grid.Row="5" Grid.Column="1" JustifyContent="SpaceBetween">
+                <VerticalStackLayout>
+                    <ImageButton x:Name="Home" Source="home.png" Clicked="Home_Clicked"/>
+                    <Label Text="Главная"/>
+                </VerticalStackLayout>
+
+                <VerticalStackLayout>
+                    <ImageButton x:Name="ToSearch"  Source="search.png" Clicked="ToSearch_Clicked"/>
+                    <Label Text="Поиск"/>
+                </VerticalStackLayout>
+
+                <VerticalStackLayout>
+                    <ImageButton x:Name="ToCart"  Source="cart.png" IsEnabled="False"/>
+                    <Label Text="Корзина"/>
+                </VerticalStackLayout>
+                <VerticalStackLayout>
+                    <ImageButton x:Name="ToProfile" Source="account.png"  Clicked="ToProfile_Clicked"/>
+                    <Label Text="Профиль"/>
+                </VerticalStackLayout>
+            </FlexLayout>
+    </Grid>
+</ContentPage>

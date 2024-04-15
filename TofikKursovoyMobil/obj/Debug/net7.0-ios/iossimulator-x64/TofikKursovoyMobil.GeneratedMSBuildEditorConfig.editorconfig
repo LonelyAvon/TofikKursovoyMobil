@@ -1,0 +1,77 @@
+is_global = true
+build_property.TargetFramework = net7.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TofikKursovoyMobil
+build_property.ProjectDir = /Users/user/Projects/TofikKursovoyMobil/TofikKursovoyMobil/
+
+[/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyMobil/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TofikKursovoyMobil.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyMobil/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TofikKursovoyMobil.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyMobil/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TofikKursovoyMobil.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyMobil/Pages/AllProducts.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TofikKursovoyMobil.Pages.AllProducts.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/AllProducts.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/AllProducts.xaml
+
+[/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyMobil/Pages/Cart.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TofikKursovoyMobil.Pages.Cart.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/Cart.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/Cart.xaml
+
+[/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyMobil/Pages/CartPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TofikKursovoyMobil.Pages.CartPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/CartPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/CartPage.xaml
+
+[/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyMobil/Pages/ProductInfo.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TofikKursovoyMobil.Pages.ProductInfo.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/ProductInfo.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/ProductInfo.xaml
+
+[/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyMobil/Pages/ProfilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TofikKursovoyMobil.Pages.ProfilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/ProfilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/ProfilePage.xaml
+
+[/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyMobil/Pages/SearchPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TofikKursovoyMobil.Pages.SearchPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/SearchPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/SearchPage.xaml
+
+[/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyMobil/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TofikKursovoyMobil.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
+
+[/Users/user/Projects/TofikKursovoyMobil/TofikKursovoyMobil/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TofikKursovoyMobil.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml

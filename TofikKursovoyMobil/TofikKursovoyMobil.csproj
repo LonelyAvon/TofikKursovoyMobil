@@ -1,0 +1,163 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net7.0-android;net7.0-ios;net7.0-maccatalyst</TargetFrameworks>
+		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net7.0-windows10.0.19041.0</TargetFrameworks>
+		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
+		<!-- <TargetFrameworks>$(TargetFrameworks);net7.0-tizen</TargetFrameworks> -->
+		<OutputType>Exe</OutputType>
+		<RootNamespace>TofikKursovoyMobil</RootNamespace>
+		<UseMaui>true</UseMaui>
+		<SingleProject>true</SingleProject>
+		<ImplicitUsings>enable</ImplicitUsings>
+
+		<!-- Display name -->
+		<ApplicationTitle>TofikKursovoyMobil</ApplicationTitle>
+
+		<!-- App Identifier -->
+		<ApplicationId>com.companyname.tofikkursovoymobil</ApplicationId>
+		<ApplicationIdGuid>7ff051b7-e391-4dab-b54f-aa8050f219ac</ApplicationIdGuid>
+
+		<!-- Versions -->
+		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+		<ApplicationVersion>1</ApplicationVersion>
+
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">11.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">13.1</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
+		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|AnyCPU'">
+	  <CreatePackage>false</CreatePackage>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-ios|AnyCPU'">
+	  <CreatePackage>false</CreatePackage>
+	</PropertyGroup>
+	<ItemGroup>
+		<!-- App Icon -->
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+
+		<!-- Splash Screen -->
+		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
+
+		<!-- Images -->
+		<MauiImage Include="Resources\Images\*" />
+		<MauiImage Update="Resources\Images\dotnet_bot.svg" BaseSize="168,208" />
+
+		<!-- Custom Fonts -->
+		<MauiFont Include="Resources\Fonts\*" />
+
+		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
+		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+		<MauiImage Include="Resources\Images\Buttons\search.svg" />
+		<MauiImage Include="Resources\Images\Buttons\home.svg" />
+		<MauiImage Include="Resources\Images\Buttons\cart.svg" />
+		<MauiImage Include="Resources\Images\Buttons\backarrow.svg" />
+		<MauiImage Include="Resources\Images\Buttons\account.svg" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\Images\Logo.png" />
+	  <None Remove="Resources\Images\Photos\" />
+	  <None Remove="Resources\Images\Photos\Advertising.png" />
+	  <None Remove="Resources\Images\Photos\Guitar.png" />
+	  <None Remove="Resources\Images\Photos\Piano.png" />
+	  <None Remove="Resources\Images\logo.png" />
+	  <None Remove="Resources\Images\Photos\Puf.png" />
+	  <None Remove="Resources\Images\Guitars\" />
+	  <None Remove="Resources\Images\Guitars\CRAFTERA21.jpeg" />
+	  <None Remove="Resources\Images\Guitars\IBANEZAC340.jpeg" />
+	  <None Remove="Resources\Images\Guitars\ROCKDALE1.jpeg" />
+	  <None Remove="Resources\Images\Guitars\ROCKDALEA1.jpeg" />
+	  <None Remove="Resources\Images\Guitars\ROCKDALEA1.png" />
+	  <None Remove="Resources\Images\Guitars\ROCKDALE1.png" />
+	  <None Remove="Resources\Images\Guitars\ibanezgg320.png" />
+	  <None Remove="Resources\Images\Guitars\ibanezyc320.png" />
+	  <None Remove="Resources\Images\Photos\hall.png" />
+	  <None Remove="Resources\Images\Photos\telegram.png" />
+	  <None Remove="Resources\Images\Photos\vk.png" />
+	  <None Remove="Resources\Images\Buttons\" />
+	  <None Remove="Resources\Images\Buttons\search.svg" />
+	  <None Remove="Resources\Images\Buttons\cart.svg" />
+	  <None Remove="Resources\Images\Buttons\home.svg" />
+	  <None Remove="Pages\" />
+	  <None Remove="Resources\Images\Buttons\backarrow.svg" />
+	  <None Remove="Resources\Images\Buttons\account.svg" />
+	  <None Remove="Resources\Images\Beat\" />
+	  <None Remove="Resources\Images\Key\" />
+	  <None Remove="Resources\Images\Fuu\" />
+	  <None Remove="Resources\Images\MusicHelpers\" />
+	  <None Remove="Resources\Images\Accessories\" />
+	  <None Remove="Resources\Images\Beat\melodicatd02k.png" />
+	  <None Remove="Resources\Images\Beat\melodicatempest.png" />
+	  <None Remove="Resources\Images\Fuu\roybensonmaesta.png" />
+	  <None Remove="Resources\Images\Fuu\roybensonpf500.png" />
+	  <None Remove="Resources\Images\Key\rolandgl10.png" />
+	  <None Remove="Resources\Images\Key\korgpa700.png" />
+	  <None Remove="Resources\Images\Key\korgpa600.png" />
+	  <None Remove="Resources\Images\Key\rolandjunods61.png" />
+	  <None Remove="Resources\Images\Key\yamahapsre373.png" />
+	  <None Remove="Resources\Images\Guitars\yamahajj213.png" />
+	  <None Remove="Resources\Images\Buttons\box.png" />
+	  <None Remove="Resources\Images\MusicHelpers\melodicahmc660.png" />
+	  <None Remove="Resources\Images\Accessories\yamahawinders.png" />
+	  <None Remove="Resources\Images\Accessories\yamahaes1.png" />
+	</ItemGroup>
+	<ItemGroup>
+	  <BundleResource Include="Resources\Images\logo.png" />
+	  <BundleResource Include="Resources\Images\Photos\Advertising.png" />
+	  <BundleResource Include="Resources\Images\Photos\Guitar.png" />
+	  <BundleResource Include="Resources\Images\Photos\Piano.png" />
+	  <BundleResource Include="Resources\Images\logo.png" />
+	  <BundleResource Include="Resources\Images\Photos\Puf.png" />
+	  <BundleResource Include="Resources\Images\Guitars\ibanezgg320.png" />
+	  <BundleResource Include="Resources\Images\Guitars\ibanezyc320.png" />
+	  <BundleResource Include="Resources\Images\Photos\hall.png" />
+	  <BundleResource Include="Resources\Images\Photos\telegram.png" />
+	  <BundleResource Include="Resources\Images\Photos\vk.png" />
+	  <BundleResource Include="Resources\Images\Beat\melodicatd02k.png" />
+	  <BundleResource Include="Resources\Images\Beat\melodicatempest.png" />
+	  <BundleResource Include="Resources\Images\Fuu\roybensonmaesta.png" />
+	  <BundleResource Include="Resources\Images\Fuu\roybensonpf500.png" />
+	  <BundleResource Include="Resources\Images\Key\rolandgl10.png" />
+	  <BundleResource Include="Resources\Images\Key\korgpa700.png" />
+	  <BundleResource Include="Resources\Images\Key\korgpa600.png" />
+	  <BundleResource Include="Resources\Images\Key\rolandjunods61.png" />
+	  <BundleResource Include="Resources\Images\Key\yamahapsre373.png" />
+	  <BundleResource Include="Resources\Images\Guitars\yamahajj213.png" />
+	  <BundleResource Include="Resources\Images\Buttons\box.png" />
+	  <BundleResource Include="Resources\Images\MusicHelpers\melodicahmc660.png" />
+	  <BundleResource Include="Resources\Images\Accessories\yamahawinders.png" />
+	  <BundleResource Include="Resources\Images\Accessories\yamahaes1.png" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Resources\Images\Photos\" />
+	  <Folder Include="Resources\Images\Guitars\" />
+	  <Folder Include="Resources\Images\Buttons\" />
+	  <Folder Include="Pages\" />
+	  <Folder Include="Resources\Images\Beat\" />
+	  <Folder Include="Resources\Images\Key\" />
+	  <Folder Include="Resources\Images\Fuu\" />
+	  <Folder Include="Resources\Images\MusicHelpers\" />
+	  <Folder Include="Resources\Images\Accessories\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\TofikKursovoyModels\TofikKursovoyModels.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Compile Remove="Pages\CartPage.xaml.cs" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Content Include="Pages\CartPage.xaml.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' ">
+	    <DependentUpon>CartPage.xaml</DependentUpon>
+	    <SubType>Code</SubType>
+	  </Content>
+	</ItemGroup>
+</Project>

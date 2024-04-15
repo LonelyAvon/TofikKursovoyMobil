@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TofikKursovoyMobil.Pages.ProfilePage"
+             Title="ProfilePage">
+    <Grid RowDefinitions="30*,300*,30*"  ColumnDefinitions="30,1*,30" >
+        <Border Grid.ColumnSpan="3" Grid.Row="0" BackgroundColor="Black" Stroke="Black"/>
+       <Image Source="logo.png" Grid.Row="0" Grid.Column="1" MaximumHeightRequest="40" />
+
+        <VerticalStackLayout Grid.Row="1" Grid.Column="1" VerticalOptions="Center"  Spacing="50">
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Фамилия" FontSize="30"/>
+                <Entry x:Name="SurnameTextBox" FontSize="20" Placeholder="Фамилия"/>
+                <Border MaximumHeightRequest="2" Stroke="Black"/>
+            </VerticalStackLayout>
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Имя" FontSize="30"/>
+                <Entry x:Name="NameTextBox" FontSize="20" Placeholder="Имя"/>
+                <Border MaximumHeightRequest="2" Stroke="Black"/>
+            </VerticalStackLayout>
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Отчество" FontSize="30"/>
+                <Entry x:Name="PatronymicTextBox" FontSize="20" Placeholder="Отчество"/>
+                <Border MaximumHeightRequest="2" Stroke="Black"/>
+            </VerticalStackLayout>
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Номер телефона" FontSize="30"/>
+                <Entry x:Name="PhoneTextBox" FontSize="20" Placeholder="+7(999)-999-99-99">
+                </Entry>
+
+                <Border MaximumHeightRequest="2" Stroke="Black"/>
+            </VerticalStackLayout>
+            <Button x:Name="UploadButton" Clicked="UploadButton_Clicked" Text="Обновить" FontSize="20" HorizontalOptions="Center" Padding="20,0,20,0"/>
+        </VerticalStackLayout>
+
+        <Border Grid.Row="3" Grid.ColumnSpan="3" MaximumHeightRequest="2" Stroke="Black" VerticalOptions="Start"/>
+
+            <FlexLayout  Grid.Row="3" Grid.Column="1" JustifyContent="SpaceBetween">
+                <VerticalStackLayout>
+                    <ImageButton x:Name="ToHome" Source="home.png" Clicked="ToHome_Clicked"/>
+                    <Label Text="Главная"/>
+                </VerticalStackLayout>
+
+                <VerticalStackLayout>
+                    <ImageButton x:Name="ToSearch" Clicked="ToSearch_Clicked" Source="search.png"/>
+                    <Label Text="Поиск"/>
+                </VerticalStackLayout>
+
+                <VerticalStackLayout>
+                    <ImageButton x:Name="ToCart" Clicked="ToCart_Clicked" Source="cart.png"/>
+                    <Label Text="Корзина"/>
+                </VerticalStackLayout>
+                <VerticalStackLayout>
+                    <ImageButton x:Name="ToProfile" Source="account.png" IsEnabled="False"/>
+                    <Label Text="Профиль"/>
+                </VerticalStackLayout>
+            </FlexLayout>
+    </Grid>
+</ContentPage>

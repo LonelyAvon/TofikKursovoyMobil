@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TofikKursovoyMobil.MainPage"
+             NavigationPage.HasNavigationBar="False"
+             >
+
+    <Grid RowDefinitions="9*,0.8*" ColumnDefinitions="30,1*,30" BackgroundColor="#d9d9d9">
+    <ScrollView BackgroundColor="#d9d9d9" Grid.ColumnSpan="3">
+        <Grid ColumnDefinitions="30,1*,30" RowDefinitions="60,20,120,20*,40*,Auto,30*,Auto,Auto,30,120*">
+            <Border Grid.ColumnSpan="3" Grid.Row="0" BackgroundColor="Black" Stroke="Black"/>
+            <Image Grid.Row="0" Grid.Column="1" Source="logo.png" MaximumHeightRequest="50"/>
+            <Image  Grid.Row="2" Grid.ColumnSpan="3"  Source="Images/Photos/Advertising.png" />
+            <Label Margin="0,20,0,20" Grid.Row="4" Grid.Column="1" Text="Популярные категории" FontSize="26" FontAttributes="Italic,Bold" FontFamily="" />
+            <StackLayout Grid.Row="5" Grid.Column="1">
+                <StackLayout  Orientation="Horizontal" Spacing="30">
+                        <VerticalStackLayout>
+                            <ImageButton x:Name="ToGuitars" Source="Images/Photos/Guitar.png" Clicked="ToGuitars_Clicked"/>
+                            <Label Text="Струнные" HorizontalTextAlignment="Center" FontSize="20" FontAttributes="Bold" FontFamily=""/>
+                         </VerticalStackLayout>
+                          <VerticalStackLayout>
+                            <ImageButton x:Name="ToKey" Clicked="ToKey_Clicked" Source="Images/Photos/Piano.png" />
+                            <Label Text="Клавишные" HorizontalTextAlignment="Center" FontSize="20" FontAttributes="Bold" FontFamily="" />
+                        </VerticalStackLayout>
+                    </StackLayout>
+                <ImageButton x:Name="ToPuf" Clicked="ToPuf_Clicked" Source="Images/Photos/Puf.png" MaximumHeightRequest="250" HorizontalOptions="Center"/>
+                <Label Text="Духовые" HorizontalTextAlignment="Center" FontSize="20" FontAttributes="Bold" FontFamily="" />
+                
+             </StackLayout>
+            <Label Margin="0,20,0,20" Grid.Row="6" Grid.Column="1" Text="Товары по акции" FontSize="26" FontAttributes="Italic,Bold" FontFamily=""/>
+            <FlexLayout Grid.Row="7" Grid.Column="1"
+                x:Name="flexLayout"
+                        Direction="Row"
+                        Wrap="Wrap"
+                        AlignContent="Start" AlignItems="Start"
+                        BindableLayout.ItemsSource="{Binding _products}"
+                        JustifyContent="SpaceAround" >
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate>
+                            <StackLayout Orientation="Vertical" WidthRequest="180">
+                                <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer x:Name="GetProduct" Tapped="GetProduct_Tapped"/>
+                            </StackLayout.GestureRecognizers>
+                            <Image Source="{Binding PhotoName}" HeightRequest="150" WidthRequest="150"/>
+                            <Label Text="{Binding Name}" HorizontalTextAlignment="Center" FontSize="13"/>
+                            <Label Text="{Binding ShortDescription}" HeightRequest="40" LineBreakMode="WordWrap" FontAttributes="Italic" FontFamily="" HorizontalTextAlignment="Center" FontSize="13"/>
+                            <Label HorizontalOptions="Center">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span x:Name="DiscountSaleLabel"  Text="{Binding  NewCost}" TextColor="#4DC939"/>
+                                        <Span Text=" руб." TextColor="#4DC939"/>
+                                        <Span Text="   " />
+                                        <Span Text="{Binding OldCost}" TextColor="#b9b9b9"/>
+                                        <Span Text=" руб." TextColor="#b9b9b9"/>
+                                    </FormattedString>
+
+                                </Label.FormattedText>
+                            </Label>
+                            <Border x:Name="BuyProduct" Padding="20,0,20,0" BackgroundColor="#735777" VerticalOptions="Center" HorizontalOptions="Center" Margin="10,0,0,20">
+                                <Label Text="Купить" TextColor="White"/>
+                                </Border>
+                        </StackLayout>
+
+                    </DataTemplate>
+
+                </BindableLayout.ItemTemplate>
+                </FlexLayout>
+            <VerticalStackLayout Grid.Row="8" Grid.Column="1" Spacing="20">
+                <Label Text="Наш магазин" FontSize="26" FontAttributes="Italic,Bold" FontFamily=""/>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Адрес: " FontAttributes="Bold" FontSize="20"/>
+                            <Span Text="ул. Универсальная 36/1" FontSize="20"/>
+
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <VerticalStackLayout>
+                 <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Режим работы: " FontAttributes="Bold" FontSize="20"/>
+                        </FormattedString>
+
+                    </Label.FormattedText>
+
+                </Label>
+                <Label Text="Понедельник - суббота 10:00 - 20:00" FontSize="18" />
+                <Label Text="Воскресенье 10:00 - 18:00" FontSize="18" />
+
+                    </VerticalStackLayout>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Контакты: " FontAttributes="Bold" FontSize="20"/>
+                            <Span Text="+7 (983)-143-23-76" FontSize="20"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Image Source="Images/Photos/hall.png"/>
+                <HorizontalStackLayout HorizontalOptions="Center" Spacing="30">
+                    <ImageButton x:Name="toTelegram" Clicked="toTelegram_Clicked" Source="Images/Photos/telegram.png" MaximumHeightRequest="80" MaximumWidthRequest="80"/>
+                    <ImageButton x:Name="toVk" Clicked="toVk_Clicked" HorizontalOptions="Center" Source="Images/Photos/vk.png" MaximumHeightRequest="80" MaximumWidthRequest="80"/>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+
+            
+        </Grid>
+
+          </ScrollView>
+        <Border Grid.Row="1"  Grid.ColumnSpan="3" MaximumHeightRequest="2" Stroke="Black" VerticalOptions="Start"/>
+
+            <FlexLayout Grid.Row="1" Grid.Column="1" JustifyContent="SpaceBetween">
+                <VerticalStackLayout>
+                    <ImageButton Source="home.png" IsEnabled="False"/>
+                    <Label Text="Главная"/>
+                </VerticalStackLayout>
+
+                <VerticalStackLayout>
+                    <ImageButton x:Name="ToSearch" Clicked="ToSearch_Clicked" Source="search.png"/>
+                    <Label Text="Поиск"/>
+                </VerticalStackLayout>
+
+                <VerticalStackLayout>
+                    <ImageButton x:Name="ToCart" Clicked="ToCart_Clicked" Source="cart.png"/>
+                    <Label Text="Корзина"/>
+                </VerticalStackLayout>
+                <VerticalStackLayout>
+                    <ImageButton x:Name="ToProfile" Clicked="ToProfile_Clicked" Source="account.png"/>
+                    <Label Text="Профиль"/>
+                </VerticalStackLayout>
+
+            </FlexLayout>
+        </Grid>
+</ContentPage>
